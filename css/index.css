@@ -13538,7 +13538,7 @@ nav .navbar-nav .nav-link {
 }
 .ministries .ministry:hover img {
   filter: inherit;
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
 .ministries .ministry img {
