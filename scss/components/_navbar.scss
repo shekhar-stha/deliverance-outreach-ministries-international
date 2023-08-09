@@ -4,6 +4,12 @@ nav{
     width: 100%;
     left: 0;
     top: 0;
+
+    @media (max-width: 992px) {
+        background-color: rgb(92, 42, 120, 0.5);
+        padding: 16px 0;
+    }
+    
     .navbar-nav{
         display: flex;
         flex-direction: row;
@@ -19,10 +25,25 @@ nav{
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
+
+            @media (max-width: 992px) {
+                color: $dark;
+                text-align: center;
+            }
         }
     }
 }
 
 .logo{
     width: 19rem;
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+}
+
+.logo-section{
+    @media (max-width: 992px) {
+        width: 10rem;
+        max-width: calc(100% - 65px);
+    }
 }

@@ -2,7 +2,7 @@
 
 /* Color Set */
 $primary: #5c2a78;
-$secondary: #e3b361;
+$secondary: #c27f0b;
 $warning: #044b06;
 $success: #2299d4;
 $danger: #ff4d00;
@@ -128,13 +128,13 @@ p {
 .btn-secondary {
     color: $white;
     font-weight: 500;
-    border: 2px solid $secondary;
+    border: 2px solid $secondary;;
     transition: all 1000ms;
 
     &:hover {
-        color: $secondary;
+        color: $secondary;;
         background-color: transparent;
-        border: 2px solid $secondary;
+        border: 2px solid $secondary;;
         transform: scale(1.1);
     }
 }
@@ -143,17 +143,17 @@ p {
     padding: 0.4em 2em;
     border: none;
     border-radius: 5px;
-    color: $secondary;
+    color: $secondary;;
     transition: all 1000ms;
     position: relative;
     overflow: hidden;
-    outline: 2px solid $secondary;
+    outline: 2px solid $secondary;;
 
     &:hover {
         color: #ffffff;
         transform: scale(1.1);
-        outline: 2px solid $secondary;
-        box-shadow: 4px 5px 17px -4px $secondary;
+        outline: 2px solid $secondary;;
+        box-shadow: 4px 5px 17px -4px $secondary;;
 
         &::before {
             width: 250%;
@@ -167,7 +167,7 @@ p {
         top: 0;
         width: 0;
         height: 100%;
-        background-color: $secondary;
+        background-color: $secondary;;
         transform: skewX(45deg);
         z-index: -1;
         transition: width 1000ms;
@@ -215,22 +215,23 @@ section {
     overflow: hidden;
     margin-bottom: 4.5rem;
 }
-
-.header {
-    font-size: 35px;
+.header{
+    font-size: 2.5rem;
     font-weight: 600;
-    position: relative;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-bottom: 2rem;
 }
-
-.sub-header {
-    font-size: 18px;
-    font-weight: 600;
-    color: $secondary;
-    position: relative;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
+.sub-header{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    // background-color: $dark;
+    border-left: 6px solid $secondary;
+    width: fit-content;
+    padding: 3px 1rem;
+    color: $dark;
+    margin-bottom: 0.8rem;
 }
 
 

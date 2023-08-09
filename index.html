@@ -27,9 +27,12 @@
 
 <body>
     <!-- Top of the navbar -->
-    <section class="nav-hero position-relative">
-        <nav class="navbar navbar-expand-lg">
+    <section class="nav-hero position-relative mb-0">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
+                <div class="logo-section d-lg-none d-inline">
+                    <img class="logo" src="/img/logo.png" alt="">
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"> <span
                         class="navbar-toggler-icon"></span></button>
@@ -38,8 +41,11 @@
                 <div class="offcanvas-lg offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
                     aria-labelledby="offcanvasResponsiveLabel">
                     <div class="offcanvas-header bg-dark">
-                        <img class="logo" src="/img/logo.png" alt="">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        <div class="logo-section d-lg-none d-inline">
+                            <img class="logo" src="/img/logo.png" alt="">
+                        </div>
+
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body w-100">
@@ -82,7 +88,7 @@
         <div class="hero">
             <h1 class="text-center">A Church with a <br><span> Kingdom Agenda</span></h1>
 
-            <div class="button-borders mx-auto mt-5">
+            <div class="button-borders mx-auto mt-lg-5 mt-4">
                 <button class="primary-button"> I NEED Jesus
                 </button>
             </div>
@@ -96,7 +102,7 @@
 
         <div class="hero-img">
             <img src="/img/book-bg.jpg" alt="">
-            <img src="/img/group-discussion.jpg" alt="">
+            <img src="/img/happy group.jpg" alt="">
             <img src="/img/happy group.jpg" alt="">
         </div>
 
@@ -114,6 +120,171 @@
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
+        </div>
+    </section>
+    <!-- <span class="text-primary fw-600 fs-20">Information:</span> <span class="fs-18 ms-3 fw-500 ">We're Live On Sundays at 10 AM</span> -->
+    <div id="liveAlertPlaceholder"></div>
+    <section class="about-us mt-5 pt-3">
+        <div class="container about-us-flex">
+            <div class="img-section">
+                <img src="https://images.squarespace-cdn.com/content/v1/56ffbeec4d088e7781fce601/1494705624326-TEU2RGWDVCOY2F0ZJRDK/lightstock_294676_small_churchfront.jpg?format=1500w"
+                    alt="">
+
+                <div class="below-img-data">
+                    <i class="fa-solid fa-church d-flex align-items-center fs-22"></i>
+                    <p class="fs-22 fw-600">Lorem</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <p class="sub-header">About Us</p>
+                <h3 class="header">know more about us </h3>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <div class="d-flex mt-5 pb-2">
+                    <div class="button-borders mt-1 me-4">
+                        <button class="primary-button"> I NEED Jesus
+                        </button>
+                    </div>
+
+
+                    <a class="fancy" href="#">
+                        <span class="top-key"></span>
+                        <span class="text">Watch Videos</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ministries">
+        <div class="container">
+            <p class="sub-header">Discover Us</p>
+            <h4 class="header">Our Ministries</h4>
+        </div>
+        <div class="ministry-slider">
+            <div class="ministry">
+                <img src="/img/happy group.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+
+            <div class="ministry">
+                <img src="/img/group-discussion.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+
+            <div class="ministry">
+                <img src="/img/happy group.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+
+            <div class="ministry">
+                <img src="/img/happy group.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+
+            <div class="ministry">
+                <img src="/img/happy group.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+
+            <div class="ministry">
+                <img src="/img/happy group.jpg" alt="">
+                <div class="info">
+                    <h2>KIDS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events mt-5">
+        <div class="container">
+            <p class="sub-header">Dont miss it</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="header">Upcoming Events</h4>
+                <a class="fw-500 text-decoration-underline text-info" href="">View More</a>
+            </div>
+
+            <div class="events-grid">
+                <div class="event">
+                    <div class="img-div">
+                        <img src="/img/happy group.jpg" alt="">
+                    </div>
+                    <div class="info-div">
+                        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 27, 2023</p>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="img-div">
+                        <img src="/img/group-discussion.jpg" alt="">
+                    </div>
+                    <div class="info-div">
+                        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 27, 2023</p>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="img-div">
+                        <img src="/img/happy group.jpg" alt="">
+                    </div>
+                    <div class="info-div">
+                        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 27, 2023</p>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="img-div">
+                        <img src="/img/happy group.jpg" alt="">
+                    </div>
+                    <div class="info-div">
+                        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 27, 2023</p>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="position-relative">
