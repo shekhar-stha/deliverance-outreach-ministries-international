@@ -222,20 +222,32 @@
 }
 
 // Ministries
-.ministries{
-    .ministry{
+.ministries {
+    &:hover img {
+        filter: blur(2px);
+    }
+
+    .ministry {
         box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
         // border-radius: 8px;
         overflow: hidden;
         position: relative;
         border-right: 2px solid $info;
-        img{
+
+        &:hover{
+            img{
+                filter: inherit;
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        img {
             height: 25rem;
             width: 100%;
             object-fit: cover;
         }
 
-        .info{
+        .info {
             position: absolute;
             width: 100%;
             // height: 100%;
@@ -245,16 +257,19 @@
             left: 0;
             background-color: rgb(92, 42, 120, 0.8);
             color: $white;
-            h2{
+
+            h2 {
                 font-size: 22px;
                 font-weight: 600;
             }
-            p{
+
+            p {
                 display: none;
             }
         }
     }
-    .slick-slide{
+
+    .slick-slide {
         margin: 0 0px;
     }
 }
@@ -291,31 +306,32 @@
                     font-size: 14px;
                     font-weight: 500;
                     padding-bottom: 0.6rem;
+
                     i {
                         color: $primary;
                         margin-right: 6px;
                     }
                 }
 
-                h5{
+                h5 {
                     font-size: 17px;
                     font-weight: 600;
                 }
 
-                p{
+                p {
                     font-weight: 400;
                     font-size: 16px;
                     color: rgb(63, 63, 63);
                 }
 
-                a{
+                a {
                     color: $primary;
                     font-weight: 600;
                     display: flex;
                     align-items: center;
                     margin-top: 0.6rem;
-                    
-                    i{
+
+                    i {
                         margin-left: 0.6rem;
                     }
                 }

@@ -13527,11 +13527,19 @@ nav .navbar-nav .nav-link {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
+.ministries:hover img {
+  filter: blur(2px);
+}
 .ministries .ministry {
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   border-right: 2px solid #808080;
+}
+.ministries .ministry:hover img {
+  filter: inherit;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .ministries .ministry img {
   height: 25rem;
@@ -13590,7 +13598,7 @@ nav .navbar-nav .nav-link {
   padding-bottom: 0.6rem;
 }
 .events .events-grid .event .info-div .date i {
-  color: #c27f0b;
+  color: #5c2a78;
   margin-right: 6px;
 }
 .events .events-grid .event .info-div h5, .events .events-grid .event .info-div .h5 {
