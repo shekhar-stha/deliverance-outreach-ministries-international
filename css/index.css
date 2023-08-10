@@ -13435,14 +13435,6 @@ nav .navbar-nav .nav-link {
 .nav-hero .hero-img {
   position: relative;
 }
-.nav-hero .hero-img::after {
-  content: "";
-  background-color: rgba(92, 42, 120, 0.38);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
 .nav-hero .hero-img img {
   height: 100vh;
   object-fit: cover;
