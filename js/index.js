@@ -713,7 +713,7 @@ const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
-    `<div class="alert alert-${type} border-0 alert-dismissible rounded-0 px-5" role="alert">`,
+    `<div class="alert alert-${type} border-0 alert-dismissible rounded-0 px-5 mb-0" role="alert">`,
     `   <div class="ps-5"><p class="text-center"><span class="text-primary text-uppercase fw-600 fs-19">Service Times:</span> <span class="fs-16 text-uppercase ms-2 fw-500 ">We're Live On Sundays at 10 AM</span></p></div>`,
     '   <button type="button" class="btn-close pe-5" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
