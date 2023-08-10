@@ -36,6 +36,7 @@ nav{
 
 .logo{
     width: 19rem;
+    filter: drop-shadow(0 0 1rem rgba(0,0,0,0.5));
     @media (max-width: 992px) {
         width: 100%;
     }
