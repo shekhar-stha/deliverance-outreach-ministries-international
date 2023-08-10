@@ -13020,9 +13020,15 @@ nav .navbar-nav {
 }
 nav .navbar-nav .nav-link {
   color: #fcfef7;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-right: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.7s;
+}
+nav .navbar-nav .nav-link:hover {
+  border-bottom: 4px solid rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 992px) {
   nav .navbar-nav .nav-link {
