@@ -13640,8 +13640,6 @@ nav .navbar-nav .nav-link {
   width: 100%;
   min-height: 13rem;
   object-fit: cover;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 .events .events-grid .event .info-div {
   padding: 0.5rem 0.9rem;
