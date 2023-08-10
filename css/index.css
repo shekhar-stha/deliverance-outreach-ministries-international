@@ -12970,6 +12970,10 @@ section {
   margin-bottom: 0.8rem;
 }
 
+.lora {
+  font-family: "Lora", serif;
+}
+
 [data-scene] {
   max-width: 800px;
   padding: 10vh 50px;
@@ -13770,7 +13774,7 @@ nav .navbar-nav .nav-link {
 
 .cta {
   position: relative;
-  padding: 9rem 0;
+  padding: 8rem 0;
   background-color: rgba(92, 42, 120, 0.8);
 }
 .cta .information {
@@ -13835,7 +13839,7 @@ nav .navbar-nav .nav-link {
 }
 
 footer {
-  background-color: rgba(22, 59, 7, 0.9);
+  background-color: rgba(92, 42, 120, 0.96);
   padding: 3rem 0;
 }
 footer .bg-img {
@@ -13861,28 +13865,44 @@ footer .footer-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (min-width: 992px) {
+  footer .footer-grid {
+    padding: 0 7rem;
+  }
+}
 footer .footer-col {
   display: flex;
   flex-direction: column;
   color: #fcfef7;
-  align-items: center;
 }
 footer .footer-col h4, footer .footer-col .h4 {
   font-size: 24px;
-  font-weight: 500;
-  color: #c27f0b;
+  font-weight: 600;
+  color: #fde04f;
   margin-bottom: 1rem;
 }
 footer .footer-col a {
   color: white;
   padding-bottom: 1rem;
   font-size: 18px;
+  font-weight: 600;
+}
+footer .footer-col p {
+  font-weight: 600;
+  font-size: 18px;
+}
+footer .footer-col .cursive {
+  font-style: italic;
 }
 footer .footer-col img {
   padding: 0 1rem;
 }
-footer .footer-col .fa-brands {
+footer .footer-col .social-media {
+  display: flex;
+}
+footer .footer-col .social-media a .fa-brands {
   font-size: 24px;
+  margin: 0 10px;
 }
 
 .phone {

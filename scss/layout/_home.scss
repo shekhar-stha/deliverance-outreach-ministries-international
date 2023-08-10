@@ -514,7 +514,7 @@
 // CTA
 .cta {
     position: relative;
-    padding: 9rem 0;
+    padding: 8rem 0;
     background-color: rgb(92, 42, 120, 0.8);
 
     .information {
@@ -590,7 +590,7 @@
 
 // Footer
 footer {
-    background-color: rgba(22, 59, 7, 0.9);
+    background-color: rgb(92, 42, 120, 0.96);
     padding: 3rem 0;
 
     .bg-img {
@@ -617,19 +617,21 @@ footer {
         @media (max-width: 992px) {
             grid-template-columns: repeat(1, 1fr);
         }
+
+        @media (min-width: 992px) {
+            padding: 0 7rem;
+        }
     }
 
     .footer-col {
         display: flex;
         flex-direction: column;
         color: $white;
-        align-items: center;
 
         h4 {
             font-size: 24px;
-            font-weight: 500;
-            color: $secondary;
-            ;
+            font-weight: 600;
+            color: #fde04f;
             margin-bottom: 1rem;
         }
 
@@ -637,14 +639,31 @@ footer {
             color: white;
             padding-bottom: 1rem;
             font-size: 18px;
+            font-weight: 600;
+        }
+
+        p{
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .cursive{
+            font-style: italic;
         }
 
         img {
             padding: 0 1rem;
         }
 
-        .fa-brands {
-            font-size: 24px;
+        .social-media{
+            display: flex;
+
+            a{
+                .fa-brands{
+                    font-size: 24px;
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }
