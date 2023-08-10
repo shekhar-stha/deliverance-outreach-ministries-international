@@ -665,8 +665,10 @@ $('.services-grid').slick({
 $(".ministry-slider").slick({
   infinite: true,
   slidesToShow: 4,
-  arrows: true,
+  arrows: false,
   dots: true,
+  autoPlay: true,
+
   prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
   responsive: [
@@ -712,7 +714,7 @@ const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
     `<div class="alert alert-${type} border-0 alert-dismissible rounded-0 px-5" role="alert">`,
-    `   <div class="ps-5"><span class="text-primary text-uppercase fw-600 fs-19">Information:</span> <span class="fs-16 text-uppercase ms-3 fw-500 ">We're Live On Sundays at 10 AM</span></div>`,
+    `   <div class="ps-5"><p class="text-center"><span class="text-primary text-uppercase fw-600 fs-19">Service Times:</span> <span class="fs-16 text-uppercase ms-2 fw-500 ">We're Live On Sundays at 10 AM</span></p></div>`,
     '   <button type="button" class="btn-close pe-5" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
   ].join('')
