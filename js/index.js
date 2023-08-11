@@ -673,16 +673,23 @@ $(".ministry-slider").slick({
   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -692,7 +699,7 @@ $(".ministry-slider").slick({
 });
 
 
-$(".hero-img").slick({
+$(".hero").slick({
   slidesToShow: 1,
   fade: true,
   dots: true,
@@ -702,31 +709,17 @@ $(".hero-img").slick({
   // nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
 });
 
-var rellax = new Rellax('.rellax');
+window.addEventListener('load', function () {
+  if (window.innerWidth > 992) {
+    const sectionPairs = document.querySelectorAll('.about-us-flex');
 
+    sectionPairs.forEach(pair => {
+      const imgSection = pair.querySelector('.img-section');
+      const infoSection = pair.querySelector('.info-section');
 
-var rellax = new Rellax('.rellax', {
-  wrapper: '.custom-element'
+      const infoHeight = infoSection.clientHeight;
+      imgSection.style.height = `${infoHeight}px`;
+    });
+  }
 });
 
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} border-0 alert-dismissible rounded-0 px-5 mb-0" role="alert">`,
-    `   <div class="ps-5"><p class="text-center"><span class="text-primary text-uppercase fw-600 fs-19">Service Times:</span> <span class="fs-16 text-uppercase ms-2 fw-500 ">We're Live On Sundays at 10 AM</span></p></div>`,
-    '   <button type="button" class="btn-close pe-5" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
-
-  alertPlaceholder.append(wrapper)
-}
-
-appendAlert('Nice, you triggered this alert message!', 'info')
-
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Nice, you triggered this alert message!', 'success')
-  })
-}

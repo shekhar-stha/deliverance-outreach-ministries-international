@@ -221,6 +221,10 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    @media (max-width: 576px) {
+        font-size: 2.2rem !important;
+    }
 }
 .sub-header{
     font-family: 'Lora', serif;
@@ -233,6 +237,10 @@ section {
     padding: 3px 1rem;
     color: $dark;
     margin-bottom: 0.8rem;
+
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
+    }
 }
 
 .lora{

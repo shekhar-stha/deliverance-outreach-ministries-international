@@ -28,9 +28,9 @@
 <body>
     <!-- Top of the navbar -->
     <section class="nav-hero position-relative mb-0">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container">
-                <div class="logo-section d-lg-none d-inline">
+                <div class="logo-section d-xl-none d-inline">
                     <img class="logo" src="/img/logo.png" alt="">
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -38,10 +38,10 @@
                         class="navbar-toggler-icon"></span></button>
 
 
-                <div class="offcanvas-lg offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
+                <div class="offcanvas-xl offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
                     aria-labelledby="offcanvasResponsiveLabel">
-                    <div class="offcanvas-header bg-dark">
-                        <div class="logo-section d-lg-none d-inline">
+                    <div class="offcanvas-header bg-primary">
+                        <div class="logo-section d-xl-none d-inline">
                             <img class="logo" src="/img/logo.png" alt="">
                         </div>
 
@@ -77,7 +77,7 @@
                                     <a class="nav-link me-0" href="#">Contact</a>
                                 </li>
                             </div>
-                            <a class="btn btn-secondary d-lg-none d-inline" href="">Call Now</a>
+                            <a class="btn btn-secondary d-lg-none d-inline mt-4 fs-17 text-uppercase py-3" href="">Call Now</a>
 
                         </ul>
                     </div>
@@ -87,32 +87,31 @@
         </nav>
 
         <div class="hero">
-            <h1 class="text-center"> DELIVERING GOD'S MESSAGE OF <br><span> HOPE AND RESTORATION</span></h1>
+            <div>
+                <h1 class="text-center"> DELIVERING GOD'S MESSAGE OF <br><span> HOPE AND RESTORATION</span></h1>
 
-            <div class="d-flex mt-lg-5 mt-4 justify-content-center">
-                <div class="button-borders">
-                    <button class="primary-button"> I NEED Jesus
-                    </button>
+                <div class="d-flex mt-lg-5 mt-4 justify-content-center">
+                    <div class="button-borders">
+                        <button class="primary-button"> I NEED Jesus
+                        </button>
+                    </div>
                 </div>
-                <!-- <div class="ms-3">
-                    <a style="background-color: rgb(92, 42, 120, 0.2);"
-                        class="btn btn-outline-light rounded-0 fs-18 fw-600 border-3 px-4  h-100" href="">Watch
-                        Videos</a>
-                </div> -->
+            </div>
+
+            <div>
+                <h1 class="text-center"> Receiving GOD'S MESSAGE OF <br><span> HOPE AND RESTORATION</span></h1>
+
+                <div class="d-flex mt-lg-5 mt-4 justify-content-center">
+                    <div class="button-borders">
+                        <button class="primary-button"> I NEED Jesus
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="social-links position-absolute">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-google"></i>
-        </div>
 
-        <div class="hero-img">
-            <img src="/img/book-bg.jpg" alt="">
-            <img src="/img/happy group.jpg" alt="">
-            <img src="/img/happy group.jpg" alt="">
-        </div>
+        <img class="hero-img" src="/img/book-bg.jpg" alt="">
 
         <div class="left-lines">
             <div class="line"></div>
@@ -131,7 +130,21 @@
         </div>
     </section>
     <!-- <span class="text-primary fw-600 fs-20">Information:</span> <span class="fs-18 ms-3 fw-500 ">We're Live On Sundays at 10 AM</span> -->
-    <div class="" id="liveAlertPlaceholder"></div>
+    <div class="" id="liveAlertPlaceholder">
+        <div class="alert alert-info border-0 d-md-flex justify-content-center align-items-center alert-dismissible rounded-0 px-5 mb-0"
+            role="alert">
+            <div class="ps-md-5 d-inline">
+                <p class="text-center"><span class="text-primary text-uppercase fw-600 fs-19">Service Times:</span>
+                    <span class="fs-16 text-uppercase ms-2 fw-500 ">We're Live On Sundays (8PM), Tuesday (6:30PM) and
+                        Thursday (6:30PM).</span>
+                </p>
+            </div>
+            <div class="d-md-inline d-flex ms-md-auto">
+                <button type="button" class="btn text-decoration-underline fw-600 pe-5 position-relative mx-auto"
+                    data-bs-dismiss="alert" aria-label="Close"> Close</button>
+            </div>
+        </div>
+    </div>
 
 
     <section class="ministries mt-0">
@@ -143,7 +156,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Discipling & Leadership <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Discipling & Leadership <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -155,7 +169,8 @@
             <div class="ministry">
                 <img src="/img/group-discussion.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Men (Adults) <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Men (Adults) <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -167,7 +182,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Women (Adults) <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Women (Adults) <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -179,7 +195,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Kids (Elementary) <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Kids (Elementary) <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -191,7 +208,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Pre-Teens (Middle School) <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Pre-Teens (Middle School) <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -203,7 +221,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Teenagers (Highschool) <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Teenagers (Highschool) <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -215,7 +234,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Young Adults & College Aged <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Young Adults & College Aged <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -227,7 +247,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Couples & Marriage Ministry <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Couples & Marriage Ministry <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -239,7 +260,8 @@
             <div class="ministry">
                 <img src="/img/happy group.jpg" alt="">
                 <div class="info">
-                    <h2 class="d-flex align-items-center">Singles Ministry <i class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
+                    <h2 class="d-flex align-items-center">Singles Ministry <i
+                            class="fa-solid fa-chevron-right fs-17 ms-3"></i></h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia amet libero reprehender</p>
                     <div><a class="btn btn-light fw-500 px-2 py-1" style="font-size: 14px;" href="">
                             Learn More
@@ -261,42 +283,50 @@
                 </div>
             </div>
 
-            <div class="info-section">
-                <p class="sub-header">About Us</p>
-                <h3 class="header">know more about us </h3>
-                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+            <div>
+                <div class="info-section">
+                    <p class="sub-header">About Us</p>
+                    <h3 class="header">know more about us </h3>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
 
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
 
-                <div class="d-flex mt-5 pb-2">
-                    <div class="button-borders mt-1 me-4">
-                        <button class="primary-button"> I NEED Jesus
-                        </button>
+                    <div class="d-sm-flex mt-5 pb-2">
+
+                        <div class="button-borders mt-sm-1 me-4 mb-sm-0 mb-4">
+                            <button class="primary-button"> I NEED Jesus
+                            </button>
+                        </div>
+
+
+
+                        <a class="fancy" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">Watch Videos</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
                     </div>
-
-
-                    <a class="fancy" href="#">
-                        <span class="top-key"></span>
-                        <span class="text">Watch Videos</span>
-                        <span class="bottom-key-1"></span>
-                        <span class="bottom-key-2"></span>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Service Times -->
     <section class="service-times">
         <div class="container">
             <h3 class="header text-white text-center">Weekly Service Times</h3>
@@ -309,7 +339,7 @@
                     <p>Worship Service</p>
                 </div>
 
-                <div class="col border-end text-center">
+                <div class="col border-md-end text-center">
                     <h4>Tuesday</h4>
                     <!-- <hr class="border-3 m-2"> -->
                     <p class="italic mb-2 pt-2">6:30 pm</p>
@@ -530,6 +560,243 @@
         </div>
     </section>
 
+    <section class="social-media">
+        <div class="container">
+            <p class="sub-header">Check our handles</p>
+            <h3 class="header">Our Social Media</h3>
+            <div class="social-media-row">
+                <div class="col">
+                    <div class="icon-div">
+                        <img class="bg" src="/img/social-media-pattern.png" alt="">
+                        <a style="color: #FF0000;" href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="info-div">
+                        <p>The first Watoto village was built and named Buloba. This village has since been repurposed
+                        </p>
+                        <a class="btn btn-primary rounded-0 px-4 fw-600 fs-17 text-uppercase" href="">Visit Us</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="icon-div">
+                        <img class="bg" src="/img/social-media-pattern.png" alt="">
+                        <a style="color: #1877F2;" href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="info-div">
+                        <p>The first Watoto village was built and named Buloba. This village has since been
+                            repurposed
+                        </p>
+                        <a class="btn btn-primary rounded-0 px-4 fw-600 fs-17 text-uppercase" href="">Visit Us</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="icon-div">
+                        <img class="bg" src="/img/social-media-pattern.png" alt="">
+                        <a style="color:#833AB4;" href=""><img class="logo" src="/img/insta-logo.png" alt=""></a>
+                    </div>
+                    <div class="info-div">
+                        <p>The first Watoto village was built and named Buloba. This village has since been
+                            repurposed
+                        </p>
+                        <a class="btn btn-primary rounded-0 px-4 fw-600 fs-17 text-uppercase" href="">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ministry-training mb-4">
+        <div class="container">
+            <p class="sub-header text-white">Ministry Training</p>
+            <h3 class="header">Equipping and Empowering Servant Leaders</h3>
+
+            <div class="row">
+                <div class="col-lg-6 border-end border-4 pb-5">
+                    <p class="fs-17">At Deliverance Ministries International, we are passionate about equipping
+                        and
+                        empowering servant leaders to make a lasting impact in our church and community. Our Ministry
+                        Training
+                        programs provide practical and spiritual guidance to help individuals discover and develop their
+                        God-given
+                        gifts and talents.</p>
+                    <br>
+                    <p class="fs-17 pb-4">Whether you're interested in leading a small group, serving in our outreach
+                        efforts,
+                        or contributing to the worship team, our Ministry Training opportunities cover a wide range of
+                        areas to
+                        suit your interests and passions.</p>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h3 class=" fs-32 fw-600 ">Key Features of Our Ministry Training:</h3>
+                    <ul class="content-list fs-17 mt-4">
+                        <li>Interactive Workshops and Seminars</li>
+                        <li>Biblical Teaching and Discipleship</li>
+                        <li>Hands-On Experience and Mentorship</li>
+                        <li>Prayer and Spiritual Growth</li>
+                        <li>Opportunities for Service and Leadership</li>
+                    </ul>
+                </div>
+
+                <div class="d-lg-flex justify-content-center mt-lg-0 mt-4">
+                    <a class="btn btn-light fw-600 rounded-0 px-5" href="">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+
+        <img class="bg-img" src="/img/speaking-crowd.jpg" alt="">
+        <div class="custom-shape-divider-bottom-1691737599">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="watch-online bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <p class="sub-header">Join Us Virtually for Worship and Teaching</p>
+                    <h2 class="header">Watch Online</h2>
+
+                    <p class="fs-17 fw-500 mb-3">Experience the power of worship and teaching from the comfort of your
+                        home. Our
+                        online
+                        services are a great way to connect with the Deliverance Ministries International community and
+                        grow in
+                        your faith. Tune in every Sunday at [insert time] for our live streaming service. If you miss
+                        the live
+                        broadcast, you can always catch up and watch past services on our YouTube channel.</p>
+
+                    <p class="fs-17 fw-500 mb-3">Experience the power of worship and teaching from the comfort of your
+                        home. Our
+                        online
+                        services are a great way to connect with the Deliverance Ministries International community and
+                    </p>
+                    <a href="https://www.youtube.com/channel/your-channel-id"
+                        class="btn btn-primary rounded-0 fs-18 px-4 mt-4" target="_blank"
+                        rel="noopener noreferrer">Visit Our YouTube Channel</a>
+
+                </div>
+                <div class="col-lg mt-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6B2M49GgrK4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pe-5">
+                    <p class="sub-header text-white">Make a Difference with Your Generosity</p>
+                    <h2 class="header">Support Our Ministry</h2>
+
+                    <p class="content-text">Your generous contributions enable us to continue spreading the love and
+                        hope of
+                        Christ to our community and beyond. Every donation, no matter the size, makes a significant
+                        impact on
+                        the lives we touch.</p>
+
+                    <hr class="border-4">
+
+                    <div class="donation-options mt-4 d-md-flex ">
+                        <div class="option text-md-center pe-3">
+                            <h4 class="option-title">One-Time Donation</h4>
+                            <p class="option-description">Make a single donation to support our ongoing ministry efforts
+                                and
+                                initiatives.</p>
+                            <a href="#" class="btn btn-light fw-600 rounded-0  mt-4">Donate Now</a>
+                        </div>
+                        <div class="option text-md-center ps-md-3 mt-md-0 mt-4">
+                            <h4 class="option-title">Monthly Giving</h4>
+                            <p class="option-description">Become a monthly partner and help us sustain our mission by
+                                contributing regularly.</p>
+                            <a href="#" class="btn btn-light fw-600 rounded-0  mt-4">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-lg-0 mt-5">
+                    <div class="donation-image position-relative">
+                        <img src="/img/happy-kids.jpg" alt="Donate" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="bg-img" src="/img/people-in-group.jpg" alt="">
+
+        <div class="custom-shape-divider-bottom-1691742246">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="about-us mt-5 pt-3">
+        <div class="container about-us-flex">
+            <div class="img-section border-5 border-primary">
+                <img src="https://www.watoto.com/wp-content/uploads/2020/04/MapWhereWeAreClear.gif" alt="">
+
+                <!-- <div class="below-img-data">
+                    <i class="fa-solid fa-location-dot d-flex align-items-center fs-22"></i>
+                    <p class="fs-22 fw-600">Lorem</p>
+                </div> -->
+            </div>
+
+            <div>
+                <div class="info-section">
+                    <p class="sub-header">Making a Global Impact</p>
+                    <h3 class="header">International Ministries</h3>
+                    <p class="mt-4">At Deliverance Ministries International, we are committed to making a positive
+                        impact
+                        beyond our local community. Our International Ministries focus on spreading the love of Christ
+                        to
+                        people
+                        around the world.
+                        <br><br>
+                        Through partnerships, missions, and support, we have been able to provide aid, share
+                        the gospel, and contribute to the well-being of diverse communities across different countries.
+                    </p>
+
+                    <h3 class="fs-32 fw-600 lora mt-3">Our Global Initiatives:</h3>
+                    <ul class="content-list fw-500">
+                        <li>Humanitarian Aid Projects</li>
+                        <li>Mission Trips and Outreach</li>
+                        <li>Church Planting and Support</li>
+                        <li>Education and Healthcare Initiatives</li>
+                        <li>Cultural Exchange and Relationships</li>
+                    </ul>
+
+                    <div class="d-sm-flex mt-5 pb-2">
+
+                        <div class="button-borders mt-sm-1 me-4 mb-sm-0 mb-4">
+                            <button class="primary-button"> I NEED Jesus
+                            </button>
+                        </div>
+
+
+
+                        <a class="fancy" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">Watch Videos</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="instagram-gallery">
         <div class="container">
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
@@ -540,7 +807,7 @@
     <footer class="position-relative">
         <img class="bg-img" src="/img/group-2.jpg" alt="Footer Background">
         <div class="container footer-grid">
-            <div class="footer-col">
+            <div class="footer-col text-lg-start text-center">
                 <h4>Worship Services</h4>
                 <p class="cursive">In Person</p>
                 <p>Sundays @8 & 11 am</p>
@@ -552,9 +819,9 @@
                 <a class="text-decoration-underline" href="">Plan Your Visit</a>
             </div>
 
-            <div class="footer-col justify-content-center align-items-center">
+            <div class="footer-col justify-content-lg-center align-items-center">
                 <img class="logo" src="/img/logo.png" alt="Logo White">
-                <h4 class="text-center mt-4 lora">Follow Us</h4>
+                <h4 class="text-lg-center text-start mt-4 lora">Follow Us</h4>
                 <div class="social-media">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -563,7 +830,7 @@
                 </div>
             </div>
 
-            <div class="footer-col text-end">
+            <div class="footer-col text-lg-end text-center">
                 <h4>Visit Us</h4>
                 <p title="location" class="text-white fw-500 fs-18">
                     <i class="fs-15 fa-solid fa-location-dot text-secondary fs-20 me-1"></i>

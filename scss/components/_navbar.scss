@@ -1,9 +1,6 @@
 nav{
-    position: absolute !important;
     z-index: 2;
     width: 100%;
-    left: 0;
-    top: 0;
 
     @media (max-width: 992px) {
         background-color: rgb(92, 42, 120, 0.5);
@@ -42,13 +39,13 @@ nav{
 .logo{
     width: 19rem;
     filter: drop-shadow(0 0 1rem rgba(0,0,0,0.5));
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
         width: 100%;
     }
 }
 
 .logo-section{
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
         width: 10rem;
         max-width: calc(100% - 65px);
     }

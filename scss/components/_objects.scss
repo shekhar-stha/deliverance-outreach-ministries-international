@@ -59,6 +59,7 @@ $accent-color: #f5f5f5;
 
 .button-borders {
   position: relative;
+  width: fit-content;
 
   &:before {
     content: "";
