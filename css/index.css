@@ -13330,11 +13330,15 @@ nav .navbar-nav .nav-link:hover {
   }
 }
 
-.testimonial .slick-dots li button {
-  background-color: #ffffff;
+.ministries .slick-dots li {
+  display: none;
 }
-.testimonial li.slick-active button {
-  background-color: #5c2a78;
+.ministries .slick-dots li.slick-active,
+.ministries .slick-dots li.slick-active + li,
+.ministries .slick-dots li.slick-active + li + li,
+.ministries .slick-dots li.slick-active + li + li + li,
+.ministries .slick-dots li.slick-active + li + li + li + li {
+  display: block;
 }
 
 .nav-hero {
@@ -14312,8 +14316,44 @@ nav .navbar-nav .nav-link:hover {
   fill: #F8F8F8;
 }
 
+.international-ministry {
+  background-color: rgba(218, 218, 218, 0.88);
+  position: relative;
+}
+.international-ministry .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(50%);
+}
+.international-ministry .img-section {
+  width: 100%;
+  height: 35rem;
+}
 .international-ministry .img-section img {
-  border: 8px solid #5c2a78;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.international-ministry .custom-shape-divider-top-1692000378 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.international-ministry .custom-shape-divider-top-1692000378 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 38px;
+}
+.international-ministry .custom-shape-divider-top-1692000378 .shape-fill {
+  fill: #F8F8F8;
 }
 
 footer {

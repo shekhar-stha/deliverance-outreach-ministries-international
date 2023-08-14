@@ -23,7 +23,8 @@
     }
 
     li.slick-active button {
-        background-color: $primary;;
+        background-color: $primary;
+        ;
         width: 2rem;
         border-radius: 20px;
     }
@@ -83,18 +84,17 @@
 }
 
 
-.testimonial {
+.ministries {
 
-    .slick-dots {
-        li {
-            button {
-                background-color: #ffffff;
-            }
-        }
+    .slick-dots li {
+        display: none
     }
 
-    li.slick-active button {
-        background-color: $primary
+    .slick-dots li.slick-active,
+    .slick-dots li.slick-active+li,
+    .slick-dots li.slick-active+li+li,
+    .slick-dots li.slick-active+li+li+li,
+    .slick-dots li.slick-active+li+li+li+li {
+        display: block;
     }
-
 }

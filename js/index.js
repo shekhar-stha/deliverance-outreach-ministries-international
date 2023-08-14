@@ -628,13 +628,13 @@ $('.services-grid').slick({
 
 $(".ministry-slider").slick({
   infinite: true,
+  loop: true,
+  cssEase: 'linear',
+  rtl: false,
   slidesToShow: 4,
   arrows: false,
   dots: true,
   autoPlay: true,
-
-  prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
-  nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
   responsive: [
     {
       breakpoint: 1300,
@@ -686,4 +686,6 @@ window.addEventListener('load', function () {
     });
   }
 });
+
+
 

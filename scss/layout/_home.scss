@@ -1057,10 +1057,45 @@
 }
 
 .international-ministry{
+    background-color: rgba(218, 218, 218, 0.88);
+    position: relative;
+    .bg-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: brightness(50%)
+    }
     .img-section{
+        width: 100%;
+        height: 35rem;
         img{
-            border: 8px solid $primary;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
+    }
+
+    .custom-shape-divider-top-1692000378 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1692000378 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 38px;
+    }
+    
+    .custom-shape-divider-top-1692000378 .shape-fill {
+        fill: #F8F8F8;
     }
 }
 
