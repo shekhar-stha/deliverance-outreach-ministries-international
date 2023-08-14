@@ -13008,7 +13008,7 @@ nav {
   z-index: 2;
   width: 100%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   nav {
     background-color: rgba(92, 42, 120, 0.5);
     padding: 16px 0;
@@ -13056,8 +13056,10 @@ nav .navbar-nav .nav-link:hover {
 
 @media (max-width: 1200px) {
   .logo-section {
-    width: 10rem;
+    width: 12rem;
     max-width: calc(100% - 65px);
+    position: relative;
+    margin-bottom: -50px;
   }
 }
 
@@ -13358,6 +13360,7 @@ nav .navbar-nav .nav-link:hover {
   text-transform: uppercase;
   color: #fcfef7;
   padding: 0 2rem;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 .nav-hero .hero h1 span, .nav-hero .hero .h1 span {
   font-family: "Playfair Display", serif;
@@ -13505,98 +13508,13 @@ nav .navbar-nav .nav-link:hover {
   height: 100%;
   top: 0;
   z-index: -1;
-}
-
-.about-us {
-  overflow: visible;
-}
-.about-us .about-us-flex {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-}
-@media (max-width: 992px) {
-  .about-us .about-us-flex {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.about-us .about-us-flex .img-section {
-  position: relative;
-  height: 100%;
-  flex: 1;
-}
-.about-us .about-us-flex .img-section img {
-  width: 100%;
-  height: 100%;
-  border-right: 10px solid #5c2a78;
-  object-fit: cover;
-}
-@media (max-width: 992px) {
-  .about-us .about-us-flex .img-section img {
-    max-height: 30rem;
-  }
-}
-.about-us .about-us-flex .img-section .below-img-data {
-  position: absolute;
-  display: flex;
-  gap: 1rem;
-  background-color: #5c2a78;
-  color: #fcfef7;
-  padding: 0.8rem 1.5rem;
-  top: 0%;
-  right: 0%;
-}
-.about-us .about-us-flex .info-side {
-  flex: 1;
-}
-
-.service-times {
-  background-color: rgba(92, 42, 120, 0.9);
-  padding: 4rem 0;
-  position: relative;
-}
-.service-times .header {
-  position: relative;
-}
-.service-times .header::before {
-  position: absolute;
-  content: "";
-  width: 45%;
-  left: 0;
-}
-.service-times .col {
-  color: #fcfef7;
-  padding: 1rem 0rem;
-}
-.service-times .col h4, .service-times .col .h4 {
-  font-weight: 600;
-}
-.service-times .col .italic {
-  font-style: italic;
-}
-.service-times .col p {
-  font-weight: 500;
-  font-size: 18px;
-}
-.service-times .col h4, .service-times .col .h4,
-.service-times .col p {
-  padding: 0 2rem;
-}
-.service-times .bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
   object-fit: cover;
 }
 
-.ministries .ministry-slider:hover img {
-  filter: blur(2px);
+@media (min-width: 992px) {
+  .ministries .ministry-slider:hover img {
+    filter: blur(2px);
+  }
 }
 .ministries .ministry {
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
@@ -13654,6 +13572,141 @@ nav .navbar-nav .nav-link:hover {
   margin: 0 0px;
 }
 
+.about-us {
+  padding-bottom: 4.5rem;
+}
+.about-us .about-us-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+@media (max-width: 992px) {
+  .about-us .about-us-flex {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.about-us .about-us-flex .img-section {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+.about-us .about-us-flex .img-section img {
+  width: 100%;
+  height: 100%;
+  border-right: 10px solid #5c2a78;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .about-us .about-us-flex .img-section img {
+    max-height: 30rem;
+  }
+}
+.about-us .about-us-flex .img-section .below-img-data {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  background-color: #5c2a78;
+  color: #fcfef7;
+  padding: 0.8rem 1.5rem;
+  top: 0%;
+  right: 0%;
+}
+.about-us .about-us-flex .info-side {
+  flex: 1;
+}
+.about-us .right-lines {
+  position: absolute;
+  bottom: 0;
+  right: -28%;
+  transform: rotate(-45deg);
+  z-index: -2;
+}
+.about-us .right-lines .line {
+  width: 50rem;
+  height: 4px;
+  background-color: #ae9eb8;
+  z-index: 3;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .about-us .right-lines {
+    right: -30%;
+  }
+}
+@media (max-width: 992px) {
+  .about-us .right-lines {
+    right: -40%;
+  }
+}
+@media (max-width: 768px) {
+  .about-us .right-lines {
+    right: -70%;
+  }
+}
+@media (max-width: 576px) {
+  .about-us .right-lines {
+    right: -125%;
+  }
+}
+@media (max-width: 385px) {
+  .about-us .right-lines {
+    right: -160%;
+  }
+}
+
+.service-times {
+  background-color: rgba(92, 42, 120, 0.9);
+  padding: 4rem 0;
+  position: relative;
+}
+.service-times .header {
+  position: relative;
+}
+.service-times .header::before {
+  position: absolute;
+  content: "";
+  width: 45%;
+  left: 0;
+}
+.service-times .col {
+  color: #fcfef7;
+  padding: 1rem 0rem;
+}
+.service-times .col h4, .service-times .col .h4 {
+  font-weight: 600;
+}
+.service-times .col .italic {
+  font-style: italic;
+}
+.service-times .col p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.service-times .col h4, .service-times .col .h4,
+.service-times .col p {
+  padding: 0 2rem;
+}
+.service-times .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .service-times .n2 {
+    border: none !important;
+  }
+}
+
+.events {
+  padding-bottom: 4.5rem;
+}
 .events .events-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13678,6 +13731,7 @@ nav .navbar-nav .nav-link:hover {
 .events .events-grid .event {
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background-color: #fcfef7;
 }
 .events .events-grid .event .img-div {
   width: 100%;
@@ -13718,6 +13772,44 @@ nav .navbar-nav .nav-link:hover {
 }
 .events .events-grid .event .info-div a i {
   margin-left: 0.6rem;
+}
+.events .left-lines {
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  transform: rotate(45deg);
+  z-index: -2;
+}
+.events .left-lines .line {
+  width: 50rem;
+  height: 4px;
+  background-color: #5c2a78;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .events .left-lines {
+    left: -30%;
+  }
+}
+@media (max-width: 992px) {
+  .events .left-lines {
+    left: -40%;
+  }
+}
+@media (max-width: 768px) {
+  .events .left-lines {
+    left: -70%;
+  }
+}
+@media (max-width: 576px) {
+  .events .left-lines {
+    left: -125%;
+  }
+}
+@media (max-width: 385px) {
+  .events .left-lines {
+    left: -160%;
+  }
 }
 
 .plan-visit {
@@ -13948,6 +14040,10 @@ nav .navbar-nav .nav-link:hover {
   fill: #F8F8F8;
 }
 
+.social-media {
+  padding-bottom: 4.5rem;
+  position: relative;
+}
 .social-media .social-media-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13966,6 +14062,7 @@ nav .navbar-nav .nav-link:hover {
 }
 .social-media .social-media-row .col {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fcfef7;
 }
 .social-media .social-media-row .col .icon-div {
   width: 100%;
@@ -14007,6 +14104,44 @@ nav .navbar-nav .nav-link:hover {
 .social-media .social-media-row .col .info-div p {
   margin-bottom: 1rem;
   font-weight: 500;
+}
+.social-media .left-lines {
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.social-media .left-lines .line {
+  width: 50rem;
+  height: 4px;
+  background-color: #5c2a78;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .social-media .left-lines {
+    left: -30%;
+  }
+}
+@media (max-width: 992px) {
+  .social-media .left-lines {
+    left: -40%;
+  }
+}
+@media (max-width: 768px) {
+  .social-media .left-lines {
+    left: -70%;
+  }
+}
+@media (max-width: 576px) {
+  .social-media .left-lines {
+    left: -125%;
+  }
+}
+@media (max-width: 385px) {
+  .social-media .left-lines {
+    left: -160%;
+  }
 }
 
 .ministry-training {
@@ -14069,6 +14204,46 @@ nav .navbar-nav .nav-link:hover {
 
 .watch-online {
   position: relative;
+  padding-bottom: 4rem;
+}
+.watch-online .right-lines {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  transform: rotate(-45deg);
+  z-index: -2;
+}
+.watch-online .right-lines .line {
+  width: 50rem;
+  height: 4px;
+  background-color: #5c2a78;
+  z-index: 3;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .watch-online .right-lines {
+    right: -30%;
+  }
+}
+@media (max-width: 992px) {
+  .watch-online .right-lines {
+    right: -40%;
+  }
+}
+@media (max-width: 768px) {
+  .watch-online .right-lines {
+    right: -70%;
+  }
+}
+@media (max-width: 576px) {
+  .watch-online .right-lines {
+    right: -125%;
+  }
+}
+@media (max-width: 385px) {
+  .watch-online .right-lines {
+    right: -160%;
+  }
 }
 .watch-online iframe {
   min-height: 20rem;
@@ -14134,8 +14309,12 @@ nav .navbar-nav .nav-link:hover {
   fill: #F8F8F8;
 }
 
+.international-ministry .img-section img {
+  border: 8px solid #5c2a78;
+}
+
 footer {
-  background-color: rgba(92, 42, 120, 0.96);
+  background-color: rgba(92, 42, 120, 0.9);
   padding: 3rem 0;
 }
 footer .bg-img {
@@ -14228,6 +14407,12 @@ footer .footer-col .social-media a .fa-brands {
 }
 .phone a p {
   font-size: 18px;
+}
+
+.no-border-btn {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin-top: -0.6rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .lb-loader,

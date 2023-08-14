@@ -1,13 +1,13 @@
-nav{
+nav {
     z-index: 2;
     width: 100%;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
         background-color: rgb(92, 42, 120, 0.5);
         padding: 16px 0;
     }
-    
-    .navbar-nav{
+
+    .navbar-nav {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -17,17 +17,19 @@ nav{
             flex-direction: column;
         }
 
-        .nav-link{
+        .nav-link {
             color: $white;
             font-size: 17px;
             font-weight: 600;
             text-transform: uppercase;
             margin-right: 1.2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.7s;
-            &:hover{
-                border-bottom: 4px solid rgba(255,255,255,0.7)
+
+            &:hover {
+                border-bottom: 4px solid rgba(255, 255, 255, 0.7)
             }
+
             @media (max-width: 992px) {
                 color: $dark;
                 text-align: center;
@@ -36,17 +38,20 @@ nav{
     }
 }
 
-.logo{
+.logo {
     width: 19rem;
-    filter: drop-shadow(0 0 1rem rgba(0,0,0,0.5));
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
+
     @media (max-width: 1200px) {
         width: 100%;
     }
 }
 
-.logo-section{
+.logo-section {
     @media (max-width: 1200px) {
-        width: 10rem;
+        width: 12rem;
         max-width: calc(100% - 65px);
+        position: relative;
+        margin-bottom: -50px;
     }
 }

@@ -12,7 +12,7 @@
         margin-top: 4rem;
 
         @media (max-width: 1200px) {
-           margin: 7rem 0 10rem;
+            margin: 7rem 0 10rem;
         }
 
 
@@ -21,6 +21,7 @@
             text-transform: uppercase;
             color: $white;
             padding: 0 2rem;
+            text-shadow: 0 0 8px rgba(0,0,0,0.5);
 
             span {
 
@@ -28,7 +29,7 @@
                 text-transform: uppercase;
                 color: $white;
                 padding: 0 2rem;
-                
+
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 600;
                 font-size: 4rem;
@@ -173,110 +174,6 @@
         height: 100%;
         top: 0;
         z-index: -1;
-    }
-}
-
-.about-us {
-    overflow: visible;
-
-    .about-us-flex {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-
-        @media (max-width: 992px) {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        .img-section {
-            position: relative;
-            height: 100%;
-            flex: 1;
-            img {
-                width: 100%;
-                height: 100%;
-                // max-height: 35rem;
-                // border-top-left-radius: 30%;
-                // border-bottom-left-radius: 30%;
-                border-right: 10px solid $primary;
-                object-fit: cover;
-
-                @media (max-width: 992px) {
-                    max-height: 30rem;
-                }
-            }
-
-            .below-img-data {
-                position: absolute;
-                display: flex;
-                gap: 1rem;
-                background-color: $primary;
-                color: $white;
-                padding: 0.8rem 1.5rem;
-                top: 0%;
-                right: 0%;
-                // border-top-left-radius: 30px;
-                // border-bottom-left-radius: 30px;
-            }
-        }
-
-        .info-side {
-            flex: 1;
-        }
-    }
-}
-
-// Service Times
-.service-times {
-    background-color: rgb(92, 42, 120, 0.9);
-    ;
-    padding: 4rem 0;
-    position: relative;
-
-    .header {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: "";
-            width: 45%;
-            left: 0;
-        }
-    }
-
-    .col {
-        color: $white;
-        padding: 1rem 0rem;
-
-        h4 {
-            font-weight: 600;
-        }
-
-        .italic {
-            font-style: italic;
-        }
-
-        p {
-            font-weight: 500;
-            font-size: 18px;
-        }
-
-        h4,
-        p {
-            padding: 0 2rem;
-        }
-    }
-
-    .bg-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
         object-fit: cover;
     }
 }
@@ -284,9 +181,11 @@
 // Ministries
 .ministries {
     .ministry-slider {
-        &:hover img {
-            filter: blur(2px);
+        @media (min-width: 992px) {
+            &:hover img {
+                filter: blur(2px);
 
+            }
         }
     }
 
@@ -362,7 +261,154 @@
     }
 }
 
+.about-us {
+    padding-bottom: 4.5rem;
+    .about-us-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .img-section {
+            position: relative;
+            height: 100%;
+            flex: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                // max-height: 35rem;
+                // border-top-left-radius: 30%;
+                // border-bottom-left-radius: 30%;
+                border-right: 10px solid $primary;
+                object-fit: cover;
+
+                @media (max-width: 992px) {
+                    max-height: 30rem;
+                }
+            }
+
+            .below-img-data {
+                position: absolute;
+                display: flex;
+                gap: 1rem;
+                background-color: $primary;
+                color: $white;
+                padding: 0.8rem 1.5rem;
+                top: 0%;
+                right: 0%;
+                // border-top-left-radius: 30px;
+                // border-bottom-left-radius: 30px;
+            }
+        }
+
+        .info-side {
+            flex: 1;
+        }
+    }
+    
+    .right-lines {
+        position: absolute;
+        bottom: 0;
+        right: -28%;
+        transform: rotate(-45deg);
+        z-index: -2;
+        .line {
+            width: 50rem;
+            height: 4px;
+            background-color: #ae9eb8;
+            z-index: 3;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1200px) {
+            right: -30%;
+        }
+
+        @media (max-width: 992px) {
+            right: -40%;
+        }
+
+        @media (max-width: 768px) {
+            right: -70%;
+        }
+
+        @media (max-width: 576px) {
+            right: -125%;
+        }
+
+        @media (max-width: 385px) {
+            right: -160%;
+        }
+    }
+}
+
+// Service Times
+.service-times {
+    background-color: rgb(92, 42, 120, 0.9);
+    ;
+    padding: 4rem 0;
+    position: relative;
+
+    .header {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 45%;
+            left: 0;
+        }
+    }
+
+    .col {
+        color: $white;
+        padding: 1rem 0rem;
+
+        h4 {
+            font-weight: 600;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        h4,
+        p {
+            padding: 0 2rem;
+        }
+    }
+
+    .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .n2 {
+        @media (max-width: 768px) {
+            border: none !important;
+        }
+    }
+}
+
 .events {
+    padding-bottom: 4.5rem;
     .events-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -378,13 +424,14 @@
         }
 
         @media (max-width: 768px) {
-            grid-template-columns: repeat(1 , 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .event {
             box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
             // border-radius: 12px;
             overflow: hidden;
+            background-color: $white;
 
             .img-div {
                 width: 100%;
@@ -436,6 +483,41 @@
             }
         }
     }
+
+    .left-lines {
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        transform: rotate(45deg);
+        z-index: -2;
+        .line {
+            width: 50rem;
+            height: 4px;
+            background-color: $primary;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1200px) {
+            left: -30%;
+        }
+
+        @media (max-width: 992px) {
+            left: -40%;
+        }
+
+        @media (max-width: 768px) {
+            left: -70%;
+        }
+
+        @media (max-width: 576px) {
+            left: -125%;
+        }
+
+        @media (max-width: 385px) {
+            left: -160%;
+        }
+    }
+
 }
 
 // Plan you visit
@@ -597,16 +679,19 @@
     position: relative;
     padding: 8rem 0;
     background-color: rgb(92, 42, 120, 0.8);
+
     @media (max-width: 768px) {
         padding: 5rem 0 8rem;
     }
+
     .information {
         width: 80%;
+
         @media (max-width: 768px) {
             width: 100%;
         }
 
-        
+
         h3 {
             font-size: 4rem;
             font-weight: 600;
@@ -685,6 +770,8 @@
 
 // Social Media
 .social-media {
+    padding-bottom: 4.5rem;
+    position: relative;
     .social-media-row {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -698,9 +785,10 @@
         @media (max-width: 992px) {
             grid-template-columns: repeat(1, 1fr);
         }
+
         .col {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+            background-color: $white;
             .icon-div {
                 width: 100%;
                 height: 6rem;
@@ -750,6 +838,41 @@
             }
         }
     }
+
+    .left-lines {
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        transform: rotate(45deg);
+        z-index: -1;
+        .line {
+            width: 50rem;
+            height: 4px;
+            background-color: $primary;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1200px) {
+            left: -30%;
+        }
+
+        @media (max-width: 992px) {
+            left: -40%;
+        }
+
+        @media (max-width: 768px) {
+            left: -70%;
+        }
+
+        @media (max-width: 576px) {
+            left: -125%;
+        }
+
+        @media (max-width: 385px) {
+            left: -160%;
+        }
+    }
+
 }
 
 .ministry-training {
@@ -758,11 +881,12 @@
     padding: 6rem 0;
     color: $white;
 
-    .border-end{
+    .border-end {
         @media (max-width: 992px) {
             border: none !important;
         }
     }
+
     .bg-img {
         position: absolute;
         width: 100%;
@@ -820,8 +944,43 @@
 // Watch Online
 .watch-online {
     position: relative;
+    padding-bottom: 4rem;
+    .right-lines {
+        position: absolute;
+        bottom: 0;
+        right: -15%;
+        transform: rotate(-45deg);
+        z-index: -2;
 
-    iframe{
+        .line {
+            width: 50rem;
+            height: 4px;
+            background-color: $primary;
+            z-index: 3;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1200px) {
+            right: -30%;
+        }
+
+        @media (max-width: 992px) {
+            right: -40%;
+        }
+
+        @media (max-width: 768px) {
+            right: -70%;
+        }
+
+        @media (max-width: 576px) {
+            right: -125%;
+        }
+
+        @media (max-width: 385px) {
+            right: -160%;
+        }
+    }
+    iframe {
         min-height: 20rem
     }
 }
@@ -835,6 +994,7 @@
 
     .donation-image {
         height: 100%;
+
         &::before {
             content: "";
             position: absolute;
@@ -850,6 +1010,7 @@
             &:hover {
                 filter: brightness(80%);
             }
+
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -879,22 +1040,30 @@
         line-height: 0;
         transform: rotate(180deg);
     }
-    
+
     .custom-shape-divider-bottom-1691742246 svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
         height: 33px;
     }
-    
+
     .custom-shape-divider-bottom-1691742246 .shape-fill {
         fill: #F8F8F8;
     }
 }
 
+.international-ministry{
+    .img-section{
+        img{
+            border: 8px solid $primary;
+        }
+    }
+}
+
 // Footer
 footer {
-    background-color: rgb(92, 42, 120, 0.96);
+    background-color: rgb(92, 42, 120, 0.90);
     padding: 3rem 0;
 
     .bg-img {
@@ -957,6 +1126,7 @@ footer {
 
         img {
             padding: 0 1rem;
+
             @media (max-width: 992px) {
                 width: 20rem;
             }
@@ -1003,4 +1173,10 @@ footer {
             font-size: 18px;
         }
     }
+}
+
+.no-border-btn{
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+    margin-top: -0.6rem;
+    background-color: rgb(0, 0, 0, 0.1);
 }
