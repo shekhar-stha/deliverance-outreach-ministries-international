@@ -13402,8 +13402,9 @@ nav .navbar-nav .nav-link:hover {
   margin-right: 1rem;
 }
 .nav-hero .hero .slick-dots li button {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.6);
 }
 .nav-hero .hero .slick-dots .slick-active {
   margin-right: 1.5;
@@ -13426,6 +13427,7 @@ nav .navbar-nav .nav-link:hover {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  border: none;
 }
 .nav-hero .left-lines {
   position: absolute;
