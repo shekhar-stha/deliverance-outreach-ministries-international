@@ -939,11 +939,11 @@
     }
 
     ul li::before {
-        content: "\25FC";
-        color: $secondary;
-        font-weight: bold;
+        content: "";
+        background-color: $secondary;
         display: inline-block;
-        width: 1em;
+        width: 1rem;
+        height: 1rem;
         margin-left: -2rem;
         left: -10%;
         margin-right: 0.5rem;
