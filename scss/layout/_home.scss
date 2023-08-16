@@ -1087,7 +1087,7 @@
 }
 
 .international-ministry {
-    background-color: rgba(218, 218, 218, 0.88);
+    // background-color: rgba(218, 218, 218, 0.88);
     position: relative;
 
     .bg-img {
@@ -1097,7 +1097,6 @@
         top: 0;
         left: 0;
         z-index: -1;
-        filter: brightness(50%)
     }
 
     .img-section {
